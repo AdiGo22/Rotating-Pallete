@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items : center;
+    background-color: black;
+    position: relative;
+}
+.Heading{
+    color:white;
+    position: absolute; /* Position the heading absolutely */
+    top: 20px; /* Adjust the top position as needed */
+    left: 50%; /* Center horizontally */
+  
+}
+.circle{
+    width:400px;
+    height:400px;
+    background-color:white;
+    background: conic-gradient( red 0%,
+    orange 14.28%, 
+    yellow 28.56%, 
+    green 42.84%,  
+    blue 57.12%,  
+    indigo 71.4%,  
+    violet 85.68%, 
+    red 100%      
+);
+
+    border-radius: 50%;
+    animation:Adieffect 5s linear infinite; 
+}
+@keyframes Adieffect {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
